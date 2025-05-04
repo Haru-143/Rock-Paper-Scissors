@@ -69,6 +69,7 @@ function playGame() {
         }
     }
 
+    // Loops the round 5 times
     for (let round = 0; round <+ 5; round++) {
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
