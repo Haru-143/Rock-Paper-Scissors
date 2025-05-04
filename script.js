@@ -1,3 +1,7 @@
+// variable to store the scores
+let humanScore = 0;
+let computerScore = 0;
+
 // Computer will randomly return Rock, Paper, Scissors
 function getComputerChoice() {
     const random = Math.floor(Math.random() * 3);
