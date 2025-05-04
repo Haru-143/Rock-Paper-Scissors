@@ -68,12 +68,21 @@ function playGame() {
             return;
         }
     }
-    
+
     for (let round = 0; round <+ 5; round++) {
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
         console.log(`Score: You ${humanScore} vs Computer ${computerScore}`);
+    }
+
+    // Determines who won or lost the game
+    if (humanScore < computerScore) {
+        console.log("You lost the game!")
+    } else if (humanScore > computerScore) {
+        console.log ("You win the game!")
+    } else if (humanScore === computerScore) {
+        console.log("It's a Tie!");
     }
 }
 
